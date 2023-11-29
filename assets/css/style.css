@@ -1,0 +1,194 @@
+/*Add font style in web page body*/
+*{
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+body {
+	background-image: url("/assets/img/BG.png");
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+p{
+	font-size: 13px;
+	margin: 0;
+}
+
+h2{
+	color: rgb(0, 162, 255);
+}
+
+.home__img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	object-position: 83%;
+  }
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50vh;
+    max-width: 450vh;
+    margin-top: 20vh;
+}
+
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 20px;
+  text-align: center;
+}
+/*Add textbox style*/
+.textbox{
+	margin-bottom: 25px;
+	padding: 3%;
+	border: 0;
+	background-color: #efefef;
+	font-size: 15px;
+	box-sizing: border-box;
+}
+.resizeable-textbox {
+	resize: both; 
+	overflow: auto; 
+  }
+/*Add user img style*/
+.User_img{
+	margin-top: 20px;
+	width: 100px;
+	height: 100px;
+}
+/*Add style for sign in button */
+.btn_Next{
+	margin-top: 15px;
+	width: 150px;
+	border:0;
+	background-color: #3498DB;
+	color: #fff;
+	padding: 10px 25px 10px 25px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+/*On mouse-over, add a deeper shadow*/
+.btn_Next:hover{
+	font-size: 15px;
+	font-weight: bold;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+	background-color: #2874A6;
+}
+/*Add style for sign in button */
+a.btn_signin{
+	display: inline-block;
+	padding: 10px 25px 10px 25px;
+	width: 150px;
+	background-color: #2eb4cc; /* Change the background color to match your design */
+	color: white; /* Text color */
+	text-align: center;
+	text-decoration: none;
+	font-size: 13px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+/*On mouse-over, add a deeper shadow*/
+a.btn_signin:hover{
+	font-size: 15px;
+	font-weight: bold;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+	background-color: #235b9b;
+}
+a.btn_signup {
+	display: inline-block;
+	padding: 10px 25px 10px 25px;
+	width: 150px;
+	background-color: #4CAF50; /* Change the background color to match your design */
+	color: white; /* Text color */
+	text-align: center;
+	text-decoration: none;
+	font-size: 13px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+a.btn_signup:hover{
+	font-size: 15px;
+	font-weight: bold;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+	background-color: rgb(7, 95, 7);
+}
+.signup-link a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+.btn_signup:hover {
+	background-color: #45a049; /* Change the background color on hover to match your design */
+  }
+/*Add style for sign in button */
+.btn_clear{
+	width: 150px;
+	border:0;
+	background-color: #E74C3C;
+	color: #fff;
+	padding: 10px 25px 10px 25px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+/*On mouse-over, add a deeper shadow*/
+.btn_clear:hover{
+	font-size: 15px;
+	font-weight: bold;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+	background-color: #B03A2E;
+}
+form {
+	width: 100%;
+	max-width: 400px; /* Adjust the maximum width as needed */
+  }
+/* Style for smaller screens */
+@media only screen and (max-width: 1024px) {
+    body {
+        background-size: cover; /* Gunakan kembali background-size: cover untuk perangkat berukuran sedang */
+    }
+
+   /* Style for smaller screens */
+@media only screen and (max-width: 1024px) {
+    body {
+        background-size: cover;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 600px;
+        margin-top: 10vh;
+    }
+
+    .textbox {
+        width: 80%; /* Sesuaikan lebar textbox untuk perangkat berukuran sedang */
+        max-width: 300px; /* Atur maksimum lebar textbox untuk perangkat berukuran sedang */
+    }
+
+    .btn_Next {
+        width: 80%; /* Sesuaikan lebar tombol untuk perangkat berukuran sedang */
+        max-width: 200px; /* Atur maksimum lebar tombol untuk perangkat berukuran sedang */
+    }
+}
+}
